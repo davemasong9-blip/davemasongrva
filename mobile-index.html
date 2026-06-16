@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <title>BayanLink – Dashboard</title>
+  <link rel="stylesheet" href="mobile-styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="phone-shell">
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <span class="time">9:41</span>
+      <div class="status-icons">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <!-- SCROLLABLE CONTENT -->
+    <main class="scroll-area">
+
+      <!-- ── TOP HEADER ── -->
+      <header class="top-header">
+        <div class="header-brand">
+          <div class="brand-icon"><i class="fas fa-shield-halved"></i></div>
+          <span class="brand-name">BayanLink</span>
+        </div>
+        <button class="avatar-btn">
+          <i class="fas fa-user-circle"></i>
+        </button>
+      </header>
+
+      <!-- ── HERO BANNER ── -->
+      <section class="hero-banner">
+        <div class="hero-banner-text">
+          <h2>Digital Social Protection<br/>for Every Filipino</h2>
+          <p>A unified platform that delivers faster, safer, and smoother transaction</p>
+          <div class="hero-badge">
+            <span class="badge-amount">₱2,500</span>
+            <i class="fas fa-circle-check badge-check"></i>
+          </div>
+        </div>
+        <div class="hero-banner-illo">
+          <svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="60" width="120" height="40" fill="#b8d0ee" rx="0"/>
+            <rect x="5"  y="40" width="20" height="50" fill="#a0bcdc" rx="3"/>
+            <rect x="30" y="30" width="25" height="60" fill="#90acd0" rx="3"/>
+            <rect x="90" y="35" width="22" height="55" fill="#a0bcdc" rx="3"/>
+            <!-- Father -->
+            <circle cx="72" cy="30" r="12" fill="#4a8c5c"/>
+            <rect cx="60" cy="42" width="24" height="35" fill="#2d7a4a" rx="5" x="60" y="42"/>
+            <!-- Mother -->
+            <circle cx="48" cy="33" r="11" fill="#7a6bb0"/>
+            <rect x="38" y="44" width="20" height="32" fill="#6a5ba0" rx="5"/>
+            <!-- Child -->
+            <circle cx="88" cy="45" r="8" fill="#f5a623"/>
+            <rect x="81" y="53" width="14" height="22" fill="#5ba8d4" rx="4"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- ── WELCOME ── -->
+      <div class="welcome-bar">
+        <i class="fas fa-hand-wave" style="color:var(--blue-mid)"></i>
+        Welcome, <strong>Solana Princess Dela Cruz</strong>
+      </div>
+
+      <!-- ── QUICK ACCESS SERVICES ── -->
+      <section class="dash-section">
+        <h3 class="dash-label">Quick Access Services</h3>
+        <div class="quick-grid">
+          <a href="#" class="quick-card">
+            <i class="fas fa-money-bill-transfer"></i>
+            <span>Cash Transfer</span>
+          </a>
+          <a href="#" class="quick-card">
+            <i class="fas fa-ticket"></i>
+            <span>Food Voucher</span>
+          </a>
+          <a href="#" class="quick-card">
+            <i class="fas fa-heart-pulse"></i>
+            <span>PhilHealth</span>
+          </a>
+          <a href="#" class="quick-card">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Training</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ── MY PROGRAM AT GLANCE ── -->
+      <section class="dash-section">
+        <h3 class="dash-label">My Program at Glance</h3>
+        <div class="program-glance">
+          <div class="glance-wallets">
+            <div class="wallet-item">
+              <div class="wallet-lbl">Cash Wallet</div>
+              <div class="wallet-amt">₱5,000.00</div>
+            </div>
+            <div class="wallet-divider"></div>
+            <div class="wallet-item">
+              <div class="wallet-lbl">Food Voucher</div>
+              <div class="wallet-amt">₱2,000.00</div>
+            </div>
+          </div>
+          <div class="program-status active">
+            <span class="status-dot"></span>
+            <span>PROGRAM STATUS</span>
+            <strong>ACTIVE</strong>
+            <i class="fas fa-circle-check status-check"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── RECENT TRANSACTIONS ── -->
+      <section class="dash-section">
+        <h3 class="dash-label">Recent Transaction</h3>
+        <div class="txn-table">
+          <div class="txn-head">
+            <span>Date</span>
+            <span>Description</span>
+            <span class="txn-right">Status</span>
+          </div>
+          <div class="txn-row">
+            <span class="txn-date">Jan 6, 2026</span>
+            <span class="txn-desc">Cash Transfer</span>
+            <span class="txn-amount success">₱2,000.00</span>
+          </div>
+          <div class="txn-row">
+            <span class="txn-date">May 11, 2026</span>
+            <span class="txn-desc">Food Voucher</span>
+            <span class="txn-amount success">₱500.00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- spacer for bottom nav -->
+      <div style="height:72px;"></div>
+
+    </main>
+
+    <!-- ── BOTTOM NAV ── -->
+    <nav class="bottom-nav">
+      <a href="#" class="nav-tab active">
+        <i class="fas fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="#" class="nav-tab">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </a>
+      <a href="#" class="nav-tab">
+        <i class="fas fa-grid-2"></i>
+        <span>Programs</span>
+      </a>
+      <a href="#" class="nav-tab">
+        <i class="fas fa-circle-question"></i>
+        <span>Help</span>
+      </a>
+      <a href="#" class="nav-tab">
+        <i class="fas fa-ellipsis"></i>
+        <span>More</span>
+      </a>
+    </nav>
+
+  </div><!-- /phone-shell -->
+
+</body>
+</html>
